@@ -1,4 +1,0 @@
-
-1. Make it Responsive
-2. fix the card sizes
-3. fix fetch()

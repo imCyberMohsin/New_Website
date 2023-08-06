@@ -12,6 +12,10 @@ document.querySelector(".search-button").addEventListener("click", () => {
 // Event listener for loading the page initially with news related to "AI ML"
 window.addEventListener("load", () => fetchNews("AI ML"));
 
+
+
+
+
 //! fetchNews() Function
 async function fetchNews(query) {
     try {
@@ -35,6 +39,10 @@ async function fetchNews(query) {
     }
 }
 
+
+
+
+
 //! bindData() Function
 function bindData(articles) {
     const cardsContainer = document.getElementById("cards-container");
@@ -52,6 +60,10 @@ function bindData(articles) {
         cardsContainer.appendChild(cardClone);
     });
 }
+
+
+
+
 
 
 //! fillDataInCards() Function 
@@ -77,6 +89,10 @@ function fillDataInCards(cardClone, article) {
         window.open(article.url, "_blank");
     })
 }
+
+
+
+
 
 
 //! onNavItemClick() Function

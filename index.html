@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--? Nav Bar  -->
+    <nav>
+        <div class="main-nav flex container">
+            <!-- 1 -->
+            <a href="./index.html" class="nav-logo flex">
+                <img src="https://logoeps.com/wp-content/uploads/2014/05/21601-news-logo-icon-vector-icon-vector-eps.png"
+                    alt="main-logo">
+            </a>
+            <!-- 2 -->
+            <div class="nav-links flex">
+                <a href="#" class="hover-link nav-item" id="tech" onclick="onNavItemClick('tech')">Tech</a>
+                <a href="#" class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')">Sports</a>
+                <a href="#" class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</a>
+                <a href="#" class="hover-link nav-item" id="Politics" onclick="onNavItemClick('Politics')">Politics</a>
+            </div>
+            <!-- 3 -->
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="Eg: Science">
+                <a class="search-button" id="search-button" href="#">Search</a>
+            </div>
+        </div>
+    </nav>
+
+    <!--? Main  -->
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card" id="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-img" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 class="news-title" id="news-title">This is The Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 30/12/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Praesentium tenetur nulla nobis odit. Ipsam in eius dolorem, maiores quae libero.</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

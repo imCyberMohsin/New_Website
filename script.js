@@ -14,7 +14,7 @@ window.addEventListener("load", () => fetchNews("AI ML"));
 
 //! fetchNews() Function
 async function fetchNews(query) {
-    // try {
+    try {
         // fetching data
         const res = await fetch(`${url}${query}&apiKey=${api_key}`);
 
@@ -30,9 +30,9 @@ async function fetchNews(query) {
 
         // Binding Data
         bindData(data.articles);
-    // } catch (error) {
-    //     console.error("Error fetching news:", error.message);
-    // }
+    } catch (error) {
+        console.error("Error fetching news:", error.message);
+    }
 }
 
 //! bindData() Function

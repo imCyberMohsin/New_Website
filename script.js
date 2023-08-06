@@ -1,6 +1,6 @@
 // script.js
 
-const api_key = "a62c80fe9d7f465bbf3b820086a317b3";
+const api_key = "e1f64bbb7c0546dbb1219a1861f985cb";
 const url = "https://newsapi.org/v2/everything?q=";
 
 // Event listener for the search button
